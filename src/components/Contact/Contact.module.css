@@ -1,0 +1,154 @@
+.contactpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #71717c; /* Couleur de fond */
+    
+}
+
+.leftside {
+    width: 40%;
+    padding: 20px;
+    background-color: #edecf3; /* Couleur de fond du formulaire */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10%; /* Espacement en haut */
+    margin-bottom: 10%; /* Espacement en bas */
+}
+
+.rightside {
+    width: 25%; /* Ajusté pour une meilleure présentation */
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.contactAndSocialContainer {
+    display: flex; /* Aligne les éléments sur la même ligne */
+    justify-content: space-between; /* Écarte les éléments */
+    margin-top: 20px; /* Espacement au-dessus */
+}
+
+.contacttype {
+    width: 40%; /* Taille de l'icône */
+    height: auto;
+    margin-right: 10px; /* Espace entre l'image et le texte */
+    
+}
+
+.contacttype img {
+    cursor: pointer;
+    width: 80px; /* Taille de l'image */
+    height: auto;
+    transition: transform 0.3s ease; /* Transition pour l'animation */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 0; /* Espacement interne */
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    border: 1px solid #ddd; /* Bordure grise */
+    margin-right: 10px; /* Espace entre les icônes */
+}
+
+.contacttype img:hover {
+    transform: translateY(-5px); /* Fait monter l'image de 5 pixels au survol */
+}
+
+.contacttype img.active {
+    border: 2px solid #007bff; /* Couleur de contour pour l'image active */
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px; /* Ajusté pour une meilleure lisibilité */
+}
+
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Espacement entre les champs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 10%;
+    font-size: 24px;
+}
+
+.envoyer {
+    background-color: rgba(103, 187, 226, 0.664);
+    padding: 10px;
+    max-width: 20%; /* Ajusté */
+    border-radius: 5px; /* Coins arrondis */
+    color: #fff; /* Couleur du texte */
+    box-shadow: 0 0 10px rgba(240, 238, 238, 0.5); /* Ombre douce */
+    cursor: pointer; /* Curseur en pointeur */
+}
+
+.contactform textarea {
+    height: 150px;
+    resize: vertical; /* Permet de redimensionner verticalement */
+}
+
+.contactform button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    cursor: pointer; /* Curseur en pointeur */
+}
+
+.contactform button[type="submit"]:hover {
+    background-color: #3e8e41; /* Couleur au survol */
+}
+
+.error {
+    color: #f44336; /* Couleur des messages d'erreur */
+    font-size: 12px; /* Taille du texte */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+.socialMediaContainer {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    gap: 15px; /* Espace entre les éléments */
+}
+
+.socialMediaItem {
+    display: flex;
+    background-color: rgb(164, 151, 235); /* Couleur de fond */
+    padding: 15px; /* Espacement interne */
+    border-radius: 20px; /* Coins arrondis */
+    margin: 10px;
+    float: left;
+}
+
+.socialIcon {
+    width: 30px; /* Taille de l'icône */
+    height: auto;
+    margin-right: 10px; /* Espace entre l'image et le texte */
+}
+
+.socialText {
+    color: white; /* Couleur du texte */
+    font-style: italic; /* Texte en italique */
+}
+.socialMediaItem img {
+    cursor: pointer;
+    width: 80px; /* Taille de l'image */
+    height: auto;
+    transition: transform 0.3s ease; /* Transition pour l'animation */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 0; /* Espacement interne */
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    border: 1px solid #ddd; /* Bordure grise */
+    margin-right: 10px; /* Espace entre les icônes */
+}
+.socialMediaItem img:hover{
+    transform: translateY(-5px);
+}

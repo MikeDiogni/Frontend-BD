@@ -1,20 +1,28 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Accueil from './Pages/Accueil/Accueil';
-import Register from './Pages/Authentification/Register';
-import Login from './Pages/Authentification/Login';
+import { Routes, Route } from 'react-router-dom';
+import LoginPage from './Pages/LoginPage';
+import RegisterPage from './Pages/RegisterPage';
+import HomePage from './Pages/HomePage';
+import ContactPage from './Pages/ContactPage'
+import ProjectPage from './Pages/ProjectPage'
+import DomainPage from './Pages/DomainPage'
 
+import HeaderPage from './Pages/HeaderPage';
+import FooterPage from './Pages/FooterPage';
 
 function App() {
   return (
-    <Router>
+    <div className="app">
       <Routes>
-        <Route path='/' element={<Accueil/>} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/header" element={<HeaderPage />} />
+        <Route path="/footer" element={<FooterPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/domain" element={<DomainPage />} />
       </Routes>
-    </Router>
+    </div>
   );
 }
 
