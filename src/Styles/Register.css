@@ -1,0 +1,58 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 90%; /* S'assure que le modal ne déborde pas à l'écran */
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un meilleur effet */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: transparent; /* Fond transparent pour le bouton */
+  border: none; /* Pas de bordure */
+  font-size: 20px; /* Taille du texte */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block; /* Affiche le label en bloc */
+  margin-bottom: 5px; /* Espace entre le label et le champ */
+}
+
+.form-group input {
+  width: 100%; /* Prend toute la largeur disponible */
+  padding: 10px; /* Ajoute du padding à l'intérieur du champ */
+  border: 1px solid #ccc; /* Bordure légère */
+  border-radius: 3px; /* Bordure arrondie */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+.submit-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%; /* Prend toute la largeur du modal */
+  cursor: pointer;
+  border-radius: 3px; /* Bordure arrondie pour le bouton */
+}
