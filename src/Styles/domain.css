@@ -1,0 +1,154 @@
+/* Style pour la section titre (hors cadre) */
+.consult-section1 {
+  text-align: center;
+  padding: 0 2rem;
+  margin: 2rem auto 0;
+  max-width: 1300px;
+}
+
+.consult-section1 h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.consult-section1 .consult-subtitle {
+  color: #0a0d0e;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Style pour la section des filtres (dans cadre) */
+.consult-section {
+  background-color: white;
+  padding: 2rem;
+  margin: 0 auto 2rem;
+  max-width: 1300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.domain-filters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.filter-group select {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Style amélioré pour le champ de recherche */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-column: span 1;
+}
+
+.search-container label {
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.search-bar1 {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  height: 42px; /* Hauteur égale aux selects */
+  align-items: center;
+}
+
+.search-bar1 input {
+  flex: 1;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+}
+
+.search-domain-btn {
+  background: #2980b9;
+  color: white;
+  border: none;
+  padding: 0 1.2rem;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.search-domain-btn:hover {
+  background: #1a6a9f;
+}
+
+.search-domain-btn i {
+  font-size: 1rem;
+}
+
+/* Pagination */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.nav-btn:hover {
+  background-color: #e9ecef;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .domain-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .search-container {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .domain-filters {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-container {
+    grid-column: span 1;
+  }
+}

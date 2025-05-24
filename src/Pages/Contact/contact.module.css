@@ -1,0 +1,108 @@
+.contactpage {
+background: linear-gradient(rgb(117, 170, 223), rgb(71, 236, 222), rgb(138, 154, 246));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  background-color: #edecf3; 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; 
+  padding: 30px; 
+  max-width: 1200px; 
+  width: 100%;
+  height: 500px; 
+}
+
+
+.contactAndSocialContainer {
+  width: 140%; 
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.contacttype {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  margin-bottom: 20px; 
+}
+
+.contacttype img {
+  cursor: pointer;
+  width: 33px; 
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; 
+}
+
+.contactform {
+  width: 105%; 
+  display: flex;
+   margin-left: 20px; 
+  flex-direction: column; 
+}
+
+.contactform textarea {
+  height: 150px; 
+  resize: vertical;
+}
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; 
+}
+
+.envoyer {
+  background-color: #27ca75;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  
+  transition: background-color 0.3s ease; /* Transition pour le bouton */
+}
+
+.envoyer:hover {
+  background-color: #033e0f; /* Couleur au survol */
+}
+
+.error {
+  color: #f44336; 
+  font-size: 12px; 
+  margin-bottom: 10px;
+}
+
+.socialMediaContainer {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  gap: 15px; /* Espacement entre les éléments */
+}
+
+.socialMediaItem {
+  display: flex;
+  align-items: center; /* Aligne l'icône et le texte */
+  background-color: rgb(229, 235, 238); /* Couleur de fond */
+  padding: 15px; /* Espacement interne */
+  border-radius: 20px; /* Coins arrondis */
+}
+
+.socialIcon {
+  width: 30px; /* Taille de l'icône */
+  height: auto;
+  margin-right: 10px; /* Espace entre l'image et le texte */
+}

@@ -1,0 +1,249 @@
+/* Conteneur principal */
+.combined-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Section d'en-tête */
+.header2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 50px;
+}
+
+/* Icône d'en-tête */
+.icon2 {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+/* Barre de recherche */
+.search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 250px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Barre latérale */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #e0e0e0;
+  position: fixed;
+  top: 70px; /* Commence juste sous le header */
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.vertical-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.vertical-menu li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Section utilisateur */
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-label {
+  font-size: 16px;
+  color: #555;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Contenu principal */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+  margin-left: 250px;
+  margin-top: 70px; /* Pour compenser le header fixe */
+  min-height: calc(100vh - 70px);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Bouton de téléchargement */
+.upload-btn {
+  background-color:#166bb1;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.upload-btn:hover {
+  background-color: #0e4d81;
+}
+
+/* Pied de page */
+.dashboard-footer {
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #666;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+}
+
+.dashboard-footer strong {
+  font-weight: bold;
+}
+
+/* Style pour le logo */
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles pour le modal d'upload */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #166bb1;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #22438a;
+}
